@@ -1,0 +1,18 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowPublicRead",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": [
+                "s3:BypassGovernanceRetention",
+                "s3:CreateAccessGrantsLocation",
+                "s3:CreateBucket",
+                "s3:CreateStorageLensGroup",
+                "s3:DeleteAccessGrantsInstance"
+              ],
+            "Resource": "arn:aws:s3:::izzy.io/*"
+        }
+    ]
+}
